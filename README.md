@@ -19,7 +19,7 @@ O sistema busca:
 
 | Camada | Tecnologias |
 | :--- | :--- |
-| 🎨 **Frontend** | HTML5, CSS3 |
+| 🎨 **Frontend** | HTML, CSS |
 | ⚙️ **Backend** | PHP |
 | 🗄️ **Banco de Dados** | MySQL / SQL |
 | 💻 **Servidor Local** | XAMPP |
