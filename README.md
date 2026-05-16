@@ -42,7 +42,7 @@ Antes de iniciar, é necessário ter instalado:
  ```
 Mova o projeto para a pasta htdocs do XAMPP:
 
-mv Diario.financeiro/c/xampp/htdocs/
+mv Diario.financeiro  /c/xampp/htdocs/
 
 3.Inicie os serviços:
  
