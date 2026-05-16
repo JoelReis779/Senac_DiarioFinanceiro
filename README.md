@@ -37,25 +37,25 @@ Antes de iniciar, é necessário ter instalado:
 ### ▶️ Passos para Execução
 
 1.Clone o repositório:
-
+```bash
  git clone https://github.com/seu-usuario/Senac_DiarioFinanceiro.git
-   
+ ```
 Mova o projeto para a pasta htdocs do XAMPP:
 
 mv Diario.financeiro/c/xampp/htdocs/
 
 3.Inicie os serviços:
-
+```bash
  Abra o painel do XAMPP e inicie o servidor **Apache** e o **MySQL**.
-
+```
 4.Configure o Banco de Dados:
 
 Crie o banco de dados no *phpMyAdmin* e importe o script SQL fornecido no diretório do projeto.
 
 5.Acesse o sistema no navegador:
-
+```bash
  http://localhost/Diario.Financeiro
-   
+```
 👥 Integrantes do Projeto
 
 | Nome |
