@@ -1,0 +1,86 @@
+ 
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1a202c;  
+}
+
+/* Caixa de confirmação */
+.caixa-confirmacao {
+    background: #2d3748;
+    padding: 60px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.6);
+    max-width: 550px;
+    width: 90%;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.caixa-confirmacao h1 {
+    color: #ffffff;
+    margin-bottom: 25px;
+    font-size: 32px;
+}
+
+.caixa-confirmacao p {
+    color: #cbd5e0;
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.caixa-confirmacao strong {
+    color: #4ade80;  
+    font-size: 22px;
+}
+
+ 
+.botoes-area {
+    display: flex;
+    justify-content: center;
+    gap: 40px;  
+}
+
+/* ESTILO DOS BOTÕES */
+.btn {
+    padding: 15px 35px;
+    border-radius: 50px;  
+    text-decoration: none; 
+    font-weight: bold;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    min-width: 160px;
+    display: inline-block;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+/* Botão   Deletar - VERMELHO */
+.btn-sim {
+    background-color: #e53e3e;
+    color: #ffffff;
+}
+
+.btn-sim:hover {
+    background-color: #c53030;
+    transform: scale(1.08);
+}
+
+/* Botão Não Voltar - AZUL */
+.btn-nao {
+    background-color: #3182ce;
+    color: #ffffff ;
+}
+
+.btn-nao:hover {
+    background-color: #2b6cb0;
+    transform: scale(1.08);
+}

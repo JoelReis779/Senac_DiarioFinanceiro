@@ -1,0 +1,181 @@
+ /* Container que envolve todos os cards */
+.lista-usuarios-graficos {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+/* Card Individual do Usuário */
+.card-usuario-detalhe {
+    background-color: #ffffff;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    border: 1px solid #e2e8f0;
+}
+
+/* Cabeçalho do Card (Nome e Renda) */
+.cabecalho-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #f1f5f9;
+}
+
+.cabecalho-card h3 {
+    margin: 0;
+    color: #1f2a40;
+    font-size: 1.3rem;
+}
+
+.badge-renda {
+    background-color: #f1f5f9;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-weight: bold;
+    color: #475569;
+    font-size: 0.9rem;
+}
+
+/* Corpo do Card (Gráfico e Legenda lado a lado) */
+.corpo-card {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+/* Gráfico de Pizza */
+.pizza-pequena {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    flex-shrink: 0;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+ 
+.legenda-detalhada {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    min-width: 250px;
+}
+
+.item-legenda {
+    display: flex;
+    align-items: center;
+    font-size: 0.95rem;
+}
+
+.ponto {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.label {
+    flex-grow: 1;
+    color: #64748b;
+}
+
+.valor {
+    font-weight: 600;
+    color: #1e293b;
+}
+
+hr {
+    border: 0;
+    border-top: 1px dashed #cbd5e1;
+    margin: 10px 0;
+}
+
+ 
+.resumo-financeiro {
+    background-color: #f8fafc;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.linha-resumo {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+    font-size: 0.9rem;
+}
+
+/* Utilitários de Cores */
+ 
+.text-success { color: #2ecc71; } 
+.text-danger { color: #ef4444; }
+
+.sem-dados {
+    text-align: center;
+    padding: 40px;
+    background: white;
+    border-radius: 15px;
+    color: #94a3b8;
+}
+
+/* Responsividade */
+ 
+@media (max-width: 768px) {
+    /* Estrutura Principal */
+    .container {
+        flex-direction: column !important;
+        min-height: auto !important;
+    }
+
+    .sidebar {
+        width: 100% !important;
+        height: auto;
+        position: relative ;
+        padding: 20px;
+    }
+
+    .conteudo {
+        padding: 15px;
+        width: 100% ;
+    }
+
+    /* Elementos de Listagem e Tabelas */
+    .tabela-container {
+        overflow-x: auto;
+        width: 100%;
+        -webkit-overflow-scrolling: touch; /* Melhora a rolagem no iPhone */
+    }
+
+    /* Elementos de Cards e Gráficos  */
+    .corpo-card {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    
+    .legenda-detalhada {
+        width: 100%;
+        min-width: unset;
+    }
+
+    .pizza-pequena {
+        width: 150px;
+        height: 150px;
+    }
+
+  
+    .linha-campo {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .linha-campo label {
+        flex: 0 0 auto;
+        margin-bottom: 5px;
+    }
+}

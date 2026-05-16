@@ -1,0 +1,119 @@
+/* ===== ESTILO ESPECÍFICO DE PROJEÇÕES ===== */
+
+ 
+.coluna-dia {
+    color: #94a3b8;
+    font-style: italic;
+    font-size: 0.85em;
+}
+
+ 
+.card-projecao {
+    background: #1f2a40;  
+    border-radius: 16px;
+    padding: 30px;
+    margin-top: 40px;
+    border-left: 6px solid #3b82f6;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 900px;
+}
+
+.card-projecao h3 {
+    color: #3b82f6;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 1.2em;
+}
+
+.card-projecao p {
+    color: #e2e8f0;
+    line-height: 1.7;
+    font-size: 15px;
+}
+
+ 
+.alerta-gastos {
+    color: #ff4d4d;
+    background: rgba(255, 77, 77, 0.12);
+    padding: 8px 16px;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 11px;
+    text-transform: uppercase;
+    border: 1px solid rgba(255, 77, 77, 0.3);
+    display: inline-block;
+    min-width: 140px;
+    text-align: center;
+}
+
+ 
+.meta-poupanca {
+    color: #4ade80;
+    background: rgba(74, 222, 128, 0.12);
+    padding: 8px 16px;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 11px;
+    text-transform: uppercase;
+    border: 1px solid rgba(74, 222, 128, 0.3);
+    display: inline-block;
+    min-width: 140px;
+    text-align: center;
+}
+
+ 
+.valor-negativo {
+    color: #ff4d4d !important;
+    font-weight: bold;
+}
+
+.valor-positivo {
+    color: #4ade80 !important;
+    font-weight: bold;
+}
+
+ 
+.tabela-dados td {
+    padding: 20px 15px;  
+    vertical-align: middle;
+}
+
+.tabela-dados tbody tr:hover {
+    background-color: rgba(0, 0, 0, 0.02);  
+    transition: 0.2s;
+}
+
+/* Destaque para o Saldo Final na Tabela */
+.tabela-dados td:nth-child(5) {
+    background-color: rgba(248, 250, 252, 0.5);  
+}
+
+/* ===== RESPONSIVIDADE ===== */
+ 
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;  
+        min-height: auto;       
+    }
+
+    .sidebar {
+        width: 100%;
+        height: auto;           
+        position: relative;     
+        padding: 20px;
+    }
+
+    .conteudo {
+        padding: 15px;          
+        width: 100%;
+    }
+
+    /* Proteção contra quebra de layout em tabelas ou elementos largos */
+    .tabela-container {
+        overflow-x: auto;        
+        width: 100%;
+    }
+}

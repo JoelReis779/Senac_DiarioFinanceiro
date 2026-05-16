@@ -1,0 +1,225 @@
+ /* ===== RESET ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #f1f4f9;
+    min-height: 100vh;
+}
+
+/* ===== LAYOUT PRINCIPAL ===== */
+.container {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* ===== barra lateral  ===== */
+.sidebar {
+    width: 260px;
+    background-color: #1f2a40;
+    padding: 50px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #ffffff;
+    flex-shrink: 0;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+}
+
+.perfil {
+    width: 130px;
+    height: 130px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.perfil img { width: 75px; }
+
+.menu ul { list-style: none; width: 100%; }
+.menu li { margin-bottom: 22px; }
+.menu a {
+    text-decoration: none;
+    color: #cbd5e1;
+    font-size: 15px;
+    font-weight: 500;
+    display: block;
+    padding: 8px 0;
+    transition: 0.3s ease;
+}
+
+.menu a:hover {
+    color: #4ade80;
+    transform: translateX(6px);
+}
+
+/* ===== CONTEÚDO ===== */
+.conteudo {
+    flex: 1;
+    padding: 40px 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: auto; 
+}
+
+.conteudo h1 {
+    font-size: 32px;
+    color: #1f2a40;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.subtitulo {
+    font-size: 18px;
+    color: #4b5563;
+    margin-bottom: 40px;
+    font-weight: 500;
+}
+
+/* ===== FORMULÁRIO ===== */
+.form-cadastro {
+    width: 100%;
+    max-width: 900px;
+}
+
+.secao-form {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.05);
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+.secao-form h3 {
+    font-size: 18px;
+    color: #1f2a40;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #f1f4f9;
+    padding-bottom: 10px;
+}
+
+.grid-campos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.campo label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #475569;
+}
+
+.campo input {
+    width: 100%;
+    padding: 12px 15px;
+    border-radius: 10px;
+    border: 1px solid #d1d5db;
+    outline: none;
+    font-size: 15px;
+    transition: all 0.3s ease;
+}
+
+/* Alinhamento para campos financeiros */
+input[inputmode="decimal"] {
+    text-align: right;
+    font-weight: 600;
+}
+
+.campo input:focus {
+    border-color: #4ade80;
+    box-shadow: 0 0 0 3px rgba(74, 222, 128, 0.1);
+}
+
+.extras-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.linha-extra {
+    display: flex;
+    gap: 8px;
+    background: #f8fafc;
+    padding: 10px;
+    border-radius: 12px;
+    border: 1px solid #f1f5f9;
+}
+
+ 
+.linha-extra input:nth-of-type(1) { flex: 2; text-align: left; }
+.linha-extra input:nth-of-type(2) { flex: 1; text-align: right; color: #16a34a; }
+
+.area-botao {
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+.btn-salvar {
+    background-color: #4ade80;
+    color: #1f2a40;
+    border: none;
+    padding: 15px 40px;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(74, 222, 128, 0.2);
+}
+
+.btn-salvar:hover {
+    background-color: #22c55e;
+    transform: translateY(-2px);
+}
+
+.btn-cancelar {
+    background-color: #f1f5f9;
+    color: #64748b;
+    text-decoration: none;
+    padding: 15px 30px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+}
+
+.btn-cancelar:hover {
+    background-color: #e2e8f0;
+    color: #ef4444;
+}
+
+/* mantem reset de numero  caso use em outra página */
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    margin: 0; 
+}
+
+@media (max-width: 850px) {
+    .extras-container { grid-template-columns: 1fr; }
+    .conteudo { padding: 30px 20px; }
+}
